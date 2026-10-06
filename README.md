@@ -26,6 +26,7 @@ No environment variables or credentials are required. Installing the plugin regi
 ## Good to know
 
 - Results are read-only and redacted by design. Counterparties appear as position references, not names.
+- Until a mandate is on file with Cape, `find_matches` answers from published sample records, each marked as a sample. Live, mandate-specific matching requires a mandate on file.
 - Identity and granular financials are released only through Cape's controlled disclosure and NDA process, which requires a human supervisor. Start it at https://www.capepartners.fr.
 - Valuations are indicative and non-binding, not an offer, appraisal or investment advice.
 - No tool contacts anyone, signs anything or commits funds on the user's behalf.

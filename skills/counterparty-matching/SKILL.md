@@ -6,12 +6,14 @@ description: >
   acquire a software company like mine", or states a buy-side or sell-side
   mandate in technology or software by sector, geography, size or business model.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # Counterparty Matching with Cape Partners
 
 Turn a stated mandate into a ranked list of counterparties through the Cape `find_matches` tool.
+
+Until a mandate is on file with Cape, the public endpoint answers from Cape's published **sample records** (`scope: public-sample`, each match marked `data-quality: sample record`). Live, mandate-specific matching requires a mandate on file. Say which one you are showing.
 
 ## Build the query
 
@@ -26,6 +28,7 @@ Turn a stated mandate into a ranked list of counterparties through the Cape `fin
 2. For each, give the fit score, the fit band and the reasons behind the ranking.
 3. Include the data-quality note.
 4. Keep the redaction intact. Results carry position references, not company names.
+5. Read `scope` in the result and state plainly whether it is Cape's sample set or a live mandate match. Never imply live matching when the scope is `public-sample`.
 
 ## Hard rules
 
